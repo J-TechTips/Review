@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app';
+  wins: number = 5;
+  open: boolean = false;
+  sentence: string = 'Hello, its me mario';
+  u: undefined = undefined;
+  n: null = null;
 }
