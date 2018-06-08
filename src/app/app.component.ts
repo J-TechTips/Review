@@ -1,9 +1,6 @@
+import { Sedan } from './Vehicle/vehicle.module';
 import { Component, OnInit } from '@angular/core';
 
-interface Fighter {
-  name: string;
-  number: number;
-}
 
 @Component({
   selector: 'app-root',
@@ -13,10 +10,12 @@ interface Fighter {
 export class AppComponent implements OnInit {
   title = 'app';
 
-  fighter1: Fighter = {name: 'Jim', number: 10};
-  fighter2: Fighter = {name: 'Freddy', number: 20};
+ honda: Sedan = new Sedan('Honda', 'Civic', 1997);
+ ford: Sedan = new Sedan('Ford', 'F100', 1997);
+
 
   ngOnInit() {
-    console.log(this.fighter1, this.fighter2);
+    console.log(this.honda);
+    console.log(this.ford);
   }
 }
